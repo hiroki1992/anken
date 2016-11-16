@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>案件サイト</title>
+    <!-- BootstrapのCSS読み込み -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- jQuery読み込み -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- BootstrapのJS読み込み -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/javascript.js"></script>
+
+    <body>
+
+        <div id="header">
+        </div>
+
+
+
+
+        <div id="container">
+
+            <div id="sub"></div>
+
+            <div id="main">
+
+                <h3>新規会員登録</h3>
+                <br>
+
+                <table border="1" id="shin" rules="rows">
+                    <tr>
+                        <th>
+                            <fieldset>
+
+                                <div class="form-group form-inline">
+                                    <label for="name_family" class="head">お名前</label></th>
+                        <td><input name="name_family" class="form-control" size="10" placeholder="(例) 山田 太郎" type="text" id="Name"
+                                required="required" />
+                            </div>
+                    </tr>
+                    </td>
+
+                    <tr>
+                        <th>
+                            <div class="form-group form-inline">
+                                <label for="email" class="head">メールアドレス</label></th>
+                        <td><input name="email" class="form-control" size="30" placeholder="(例) anken@e-broad.jp" type="email"
+                                id="Email" required="required" />
+                            </div>
+                        </td>
+
+                        <tr>
+                            <th>
+                                <div class="form-group form-inline">
+                                    <label for="inputPassword" class="head">パスワード</label></th>
+                            <td> <input name="password" class="form-control" size="20" placeholder="(例)1234" type="password" id="inputPassword3"
+                                    required="required" />
+                                </div>
+                        </tr>
+                        </td>
+
+                        <tr>
+                            <th>
+                                <div class="form-group form-inline">
+                                    <label for="inputPassword" class="head">再パスワード</label></th>
+                            <td><input name="password" class="form-control" size="20" placeholder="(例)再確認" type="password" id="inputPassword3"
+                                    required="required" />
+                                </div>
+                        </tr>
+                        </td>
+
+                </table><br>
+
+                <p><a href="privacy.html">個人情報の取り扱いついて</a>をご確認の上、同意していただける場合のみクリックしてお進みください。</p><br>
+
+                <div class="regist_button">
+                    <input class="btn btn-primary btn-lg" name="next" type="submit" value="入力内容確認" />
+                </div>
+
+                <input type="hidden" name="mode" value="confirm" id="Mode" />
+                </form>
+
+                </fieldset>
+
+
+                <br>
+
+
+            </div>
+            <!--main div-->
+        </div>
+        <!--container div-->
+
+
+        <div id="footer"></div>
+
+
+    </body>
+
+</html>

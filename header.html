@@ -1,0 +1,106 @@
+
+<h4 id="title">
+    <a href="index.html"><img src="images/title.png"></a>
+    <br><b>~フリーランス向け求人サイト~</b></h4>
+
+
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid container">
+      <!– Brand and toggle get grouped for better mobile display –>
+      <div class="navbar-header">
+
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#my-navbar"
+          aria-expanded="false" btn-btncolor>
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+        <a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-home"></span> トップ</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+
+      <div class="collapse navbar-collapse" id="my-navbar">
+        <ul class="nav navbar-nav"id="NavbarContent">
+          <li id="anken"><a href="anken_search.html"><span class="glyphicon glyphicon-search"></span> 案件検索<span class="sr-only">(current)</span></a></li>
+          <li id="info"><a href="info.html"><span class="glyphicon glyphicon-briefcase"></span> 仕事の流れ</a></li>
+          <li id="koe"><a href="user.html"><span class="glyphicon glyphicon-bullhorn"></span> ご利用者様の声</a></li>
+          <li class="dropdown" id="menu" >
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-hand-right"></span> このサイトについて <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li id="comp"><a href="company.html">運営会社</a></li>
+              <li role="separator" class="divider"></li>
+              <li id="ques"><a href="question.html">よくある質問</a></li>
+              <li role="separator" class="divider"></li>
+              <li id="form"><a href="form.html">問い合わせ</a></li>
+              <li role="separator" class="divider"></li>
+              <li id="pri"><a href="privacy.html">個人情報の取り扱いについて</a></li>
+            </ul>
+          </li>
+          <li id="pass"><a href="login.html"><span class="glyphicon glyphicon-lock"></span>ログイン</a></li>
+        </ul>
+
+      </div>
+    </div>
+
+  </nav>
+
+ 
+  <!-- /.navbar-collapse -->
+
+<script>
+// 該当ページのメニューのLiにactiveクラスを追加するメソッド
+$(function () {
+    var url = window.location;
+    var path = url.href.split('/');
+    var file_name = path.pop();
+    console.log(file_name.substr(0, file_name.length - 5));
+    var page_name = file_name.substr(0, file_name.length - 5);
+    if(page_name == 'index'){
+      $("#index").addClass("active");
+ }else if(page_name == 'anken_search'){
+   $("#anken").addClass("active");
+ }
+  else if(page_name == 'info'){
+   $("#info").addClass("active");
+ }
+ else if(page_name == 'user'){
+   $("#koe").addClass("active");
+ }
+ else if(page_name == 'company'){
+   $("#comp").addClass("active");
+   $("#menu").addClass("active");
+ }
+ else if(page_name == 'question'){
+   $("#ques").addClass("active");
+    $("#menu").addClass("active");
+ }
+ else if(page_name == 'form'){
+   $("#form").addClass("active");
+    $("#menu").addClass("active"); 
+ }
+else if(page_name == 'privacy'){
+   $("#pri").addClass("active");
+    $("#menu").addClass("active");
+ }
+ else if(page_name == 'login'){
+   $("#pass").addClass("active");
+ }
+
+});
+
+
+// ドロップダウン選択時に他のアクティブを消すメゾット
+$("#menu").click(function () {
+ 
+$("#anken").removeClass("active");
+$("#info").removeClass("active");
+$("#koe").removeClass("active");
+$("#pass").removeClass("active");
+
+
+}); 
+
+</script> 

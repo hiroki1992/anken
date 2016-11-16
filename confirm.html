@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>案件サイト</title>
+    <!-- BootstrapのCSS読み込み -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- jQuery読み込み -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- BootstrapのJS読み込み -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/javascript.js"></script>
+
+    <body>
+
+        <div id="header">
+        </div>
+
+
+
+
+        <div id="container">
+            <div id="sub"></div>
+
+            <div id="main">
+
+                <h3>入力内容の確認</h3>
+                <br>
+
+                <table border="1" id="shin" rules="rows">
+                    <tr>
+                        <th>
+                            <fieldset>
+
+                                <div class="form-group form-inline">
+                                    <label for="name_family" class="head">お名前</label></th>
+                        <td><input name="name_family" class="form-control" size="10" type="text" id="Name" required="required"
+                            />
+                            </div>
+                    </tr>
+                    </td>
+
+                    <tr>
+                        <th>
+                            <div class="form-group form-inline">
+                                <label for="email" class="head">メールアドレス</label></th>
+                        <td><input name="email" class="form-control" size="30" type="email" id="Email" required="required" />
+                            </div>
+                        </td>
+
+                        <tr>
+                            <th>
+                                <div class="form-group form-inline">
+                                    <label for="inputPassword" class="head">パスワード</label></th>
+                            <td> <input name="password" class="form-control" size="20" type="password" id="inputPassword3" required="required"
+                                />
+                                </div>
+                        </tr>
+                        </td>
+
+                        <tr>
+                            <th>
+                                <div class="form-group form-inline">
+                                    <label for="inputPassword" class="head">再パスワード</label></th>
+                            <td><input name="password" class="form-control" size="20" type="password" id="inputPassword3" required="required"
+                                />
+                                </div>
+                        </tr>
+                        </td>
+
+                </table><br>
+
+                <p>上記で間違いがなければ送信、訂正がする場合は戻るを押してください。</p><br>
+
+                <div class="regist_button">
+                    <a href="form.html"><input class="btn btn-primary btn-lg" name="next" type="submit" value="戻る" /></a>
+                    <a href="mail_send.html"> <input class="btn btn-danger btn-lg" name="next" type="submit" value="送信" /></a>
+
+                </div>
+
+                <input type="hidden" name="mode" value="confirm" id="Mode" />
+                </form>
+
+                </fieldset>
+
+
+                <br>
+
+            </div>
+            <!--main div-->
+        </div>
+        <!--container div-->
+
+
+        <div id="footer"></div>
+
+
+    </body>
+
+</html>
